@@ -1,0 +1,275 @@
+@import url(common.css);
+
+body {
+  color: var(--font_color);
+  background: var(--background_color);
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h2 {
+  font-family: "Architects Daughter";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font_color);
+}
+
+/*header*/
+.header_box {
+  background: var(--main_color);
+  padding: 20px 0;
+}
+
+.flex_contaner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu {
+  display: flex;
+  gap: 30px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.header_menu > li > a:hover {
+  color: var(--active_color);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*home*/
+.home_box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.home_content {
+  width: 540px;
+}
+
+h1 {
+  font-family: "Architects Daughter";
+  font-size: 62px;
+  font-weight: 400;
+  padding-bottom: 41px;
+}
+
+.home_content > p {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 23px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.order_button {
+  width: 197px;
+  height: 60px;
+  background: var(--main_color);
+  border-radius: 6px;
+}
+
+.help_button {
+  text-decoration: none;
+  color: var(--font_color);
+  width: 157px;
+  height: 60px;
+  border: 1px solid var(--main_color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order_button:hover {
+  box-shadow: 0px 0px 10px var(--box_shadow);
+}
+
+.order_button:active {
+  background-color: var(--background_color_active);
+  box-shadow: 0px 0px 2px var(--box_shadow);
+}
+
+.help_button:hover {
+  box-shadow: 0px 0px 10px var(--box_shadow);
+  border: 2px solid var(--main_color);
+}
+.help_button:active {
+  box-shadow: 0px 0px 2px var(--box_shadow_second);
+  border: 1px solid var(--main_color);
+}
+
+.home_img > img {
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/*about*/
+.about_us_box {
+  padding-bottom: 120px;
+}
+
+.about_us_content {
+  width: 540px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+h2 {
+  font-family: "Architects Daughter";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.advantages {
+  width: 100%;
+  background: var(--main_color);
+}
+
+.advantages > ul {
+  display: flex;
+  gap: 90px;
+  justify-content: space-between;
+  padding: 78px 0px;
+}
+
+.advantages ul {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.list img:hover {
+  transform: scale(1.1);
+}
+
+/*work*/
+.how_we_work_box {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.how_we_work_img > img {
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.how_we_work_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+}
+
+/*works*/
+
+.our_wors_box {
+  padding-bottom: 120px;
+}
+
+.our_wors_box > h2 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  border-radius: 6px;
+  background: var(--main_color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_img {
+  width: 320px;
+  border-radius: 6px;
+  padding: 15px 15px 23px 15px;
+}
+
+.card > img {
+  object-fit: cover;
+}
+
+.card > p {
+  padding-bottom: 23px;
+}
+
+/*footer*/
+.footer {
+  background: var(--main_color);
+}
+
+.footer_menu {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer_menu > a {
+  display: inline-block;
+  height: 36px;
+}
+
+.footer_menu a + p {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social {
+  padding-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.© {
+  font-size: 16px;
+  font-weight: 500;
+}
